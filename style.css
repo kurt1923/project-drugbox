@@ -1,0 +1,106 @@
+.search-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+        text-shadow:
+            0 0 7px #fff,
+            0 0 10px rgb(1, 7, 90),
+            0 0 21px rgb(1, 7, 90),
+            0 0 42px rgb(2, 9, 107),
+            0 0 82px rgb(18, 121, 218);
+    font-family: 'Source Sans Pro';
+    padding-top: 3%;
+    font-weight: 100;
+}
+#search {
+    margin-top: 3%;
+}
+input {
+    font-size:xx-large;
+    font-family: 'Source Sans Pro';
+}
+
+.drug:first-child {
+    background-color: clear;
+    font-family: 'Source Sans Pro'; 
+    font-size:290%;
+    font-weight: 100;
+    padding-top: 4%;
+    
+        color: #fff;
+        text-shadow:
+            0 0 7px #fff,
+            0 0 10px rgb(1, 7, 90),
+            0 0 21px rgb(1, 7, 90),
+            0 0 42px rgb(2, 9, 107),
+            0 0 82px rgb(18, 121, 218);
+}
+p {
+    font-size: 60%;
+    margin-bottom: .4rem;
+    padding: 1%;
+    color: white;
+    font-family: 'Source Sans Pro'; 
+}
+
+body {
+    background-image: url("drugboximg.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
+button{
+    font-size: 34px;
+    color:  rgb(61, 64, 80);
+    background-color: white;
+    margin: -2px;
+    cursor: grab;
+}
+button:hover{
+    background: rgb(18, 121, 218);
+}
+.todo-input {
+    margin-top: 3%;
+    margin-bottom: 0%;
+    width: 13%;
+    margin-left: 3%;
+    
+    
+}
+.pedP{
+    font-size: xx-large;
+    padding-left: 5%;
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px rgb(1, 7, 90),
+        0 0 21px rgb(1, 7, 90),
+        0 0 42px rgb(2, 9, 107),
+        0 0 82px rgb(18, 121, 218);
+}
+.drug-form{
+    gap: .25rem;
+    top: 200%;
+}
+.drug{
+    border: #fff;
+    outline: #fff;
+    border-radius: 3px;
+    padding-top: 5%;
+}
+.drug >img{
+    max-height: 450px;
+    grid-area: image;
+    float: right;
+    margin-top: 3%;
+    margin-right: 10%;
+    padding-left: 8%;
+    
+}
