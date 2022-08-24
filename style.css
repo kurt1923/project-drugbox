@@ -48,7 +48,7 @@ p {
 }
 
 body {
-    background-image: url("drugboximg.jpg");
+    background-image: url("imgs/drugboximg.jpg");
     background-size: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
