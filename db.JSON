@@ -1,4 +1,5 @@
-drugObject = [
+{
+"drugObject" : [
     { Name: "Adenosine", Indication: "Indication: Symptomatic (poor perfusion) narrow complex tachycardia w/ pulse", Adult: "Adult Dose: 6mg Rapid Push", Ped: "Ped Dose: .1mg/kg up to 6mg", pedMult: .1, pedmg: 'mg'  },
     { Name: "Albuterol", Indication: "Indication: Wheezing due to bronchospasm", Adult: "Adult Dose: 2.5mg Nebulized", Ped: "Ped Dose: 2.5mg Nebulized" },
     { Name: "Amiodorone", Indication: "Indication: Ventricular Arrhythmias or Wide Complex Tachycardia with or without a pulse", Adult: "Adult Dose: 150 mg IV or IO. Wide Complex is 150mg drip over 10 minutes  ", Ped: "Ped Dose: 5 mg/kg IV or IO, up to 3 doses every 5 minutes" , pedMult: 5, pedmg: 'mg'},
@@ -19,3 +20,4 @@ drugObject = [
     { Name: "Oral Glucose", Indication: "Indication: Symptomatic (poor perfusion) narrow complex tachycardia w/ pulse", Adult: "Adult Dose: 6mg Rapid Push", Ped: "Ped Dose: .1mg/kg up to 6mg" , pedMult: .1, pedmg: 'mg'},
     { Name: "Sodium Bicarbonate", Indication: "Indication: Overdose, Hyperkalemic Arrest, Neonatal Resuscitation (OLMC), Burns, Crush Injuries", Adult: "Adult Dose: 1 mEq/kg IV", Ped: "Ped Dose: 1 mEq/kg IV" , pedMult: .1, pedmg: 'mg'},
 ]
+}
