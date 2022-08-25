@@ -6,16 +6,18 @@ const searchBar = document.getElementById("search")
 const drugCard = document.querySelector(".drug")
 const wgtButton = document.querySelector(".drug-input")
 const deleteBtn = document.querySelector(".delete-input")
-let htmlString = []
+let drugsArray = []
 
 
 
-function fetchDrugs() {
-    fetch('http://localhost:3000/drugObject')
-    .then(res => res.json()) 
-    .then(drugsArray =>  {displayDrugs(drugsArray) 
-        console.log(drugsArray)}
-    )
+const fetchDrugs = async () =>{
+    const res = await fetch('http://localhost:3000/drugObject')
+    drugsArray = await res.json()
+    displayDrugs(drugsArray)
+    // .then(res => res.json()) 
+    // .then(drugsArray =>  {displayDrugs(drugsArray) 
+    //     console.log(drugsArray)}
+    
 }
     
     function displayDrugs(drugobject){
@@ -38,7 +40,7 @@ function fetchDrugs() {
     searchBar.addEventListener('keyup', (e) => {
         const searchString = e.target.value.toLowerCase()
         //console.log(searchString)
-        const drugFilter = htmlString.filter((drug) => {
+        const drugFilter = drugsArray.filter((drug) => {
             return (
                 drug.Name.toLowerCase().includes(searchString)
             )
@@ -53,7 +55,7 @@ wgtButton.addEventListener('click', handleDrugSubmit)
     console.log(e.target)
     e.preventDefault()
     const searchString = searchBar.value.toLowerCase()
-    drugObject.filter((drug) => {
+    drugsArray.filter((drug) => {
         if (drug.Name.toLowerCase().includes(searchString)){
             const pedP = document.createElement("p")
             pedP.innerHTML = `Pediatric Dose for ${wgtInput.value}lbs is ${((drug.pedMult)*wgtInput.value)/2.2}${drug.pedmg} `
