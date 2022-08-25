@@ -24,7 +24,7 @@ input {
     font-family: 'Source Sans Pro';
 }
 
-.drug:first-child {
+div.drug {
     background-color: clear;
     font-family: 'Source Sans Pro'; 
     font-size:290%;
