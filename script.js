@@ -6,48 +6,51 @@ const searchBar = document.getElementById("search")
 const drugCard = document.querySelector(".drug")
 const wgtButton = document.querySelector(".drug-input")
 const deleteBtn = document.querySelector(".delete-input")
-let drugsArray = []
+const protoBtn = document.querySelector(".proto")
+const adultpro = document.querySelector(".a-pro")
+let drugsArray 
 
-
-
-const fetchDrugs = async () =>{
-    const res = await fetch('http://localhost:3000/drugObject')
-    drugsArray = await res.json()
-    displayDrugs(drugsArray)
-    // .then(res => res.json()) 
-    // .then(drugsArray =>  {displayDrugs(drugsArray) 
-    //     console.log(drugsArray)}
-    
+// const fetchDrugs = async () => {
+//     const res = await fetch('http://localhost:3000/drugObject')
+//     drugsArray = await res.json()
+//     displayDrugs(drugsArray)
+// }
+//Fetch my db.json and save it into drugsArray variable
+const fetchDrugs = () => {
+    fetch('http://localhost:3000/drugObject')
+    .then(res => res.json())
+    .then(data => {
+        console.log(data)
+        drugsArray = data
+        displayDrugs(drugsArray)
+    })    
 }
-    
-    function displayDrugs(drugobject){
-        
-        const htmlString = drugobject.map((drug) => {
-       
-       return `
+//Displays Drugs array onto the page
+function displayDrugs(drugsArray) {
+    const htmlString = drugsArray.map((drug) => {
+        return `
          <div class="drug"
-             <h2 class = "dName" >${drug.Name} <img src=${drug.pic}></img></h2>
+             <h2 class = "dName" >${drug.Name}  <img src=${drug.pic}></img></h2>
              <p>${drug.Indication}
-             <p>${drug.Adult}
-             <p class= "dose">${drug.Ped}
+             <p>${drug.Adult} 
+             <p class= "dose">${drug.Ped} 
         </div> 
          `
-        })
-          .join('')
-         drugsList.innerHTML = htmlString
-    }
-
-    searchBar.addEventListener('keyup', (e) => {
-        const searchString = e.target.value.toLowerCase()
-        //console.log(searchString)
-        const drugFilter = drugsArray.filter((drug) => {
-            return (
-                drug.Name.toLowerCase().includes(searchString)
-            )
-        })
-        displayDrugs(drugFilter)
-        
     })
+        .join('')
+    drugsList.innerHTML = htmlString
+}
+//filters drugs from search bar input
+searchBar.addEventListener('keyup', (e) => {
+    const searchString = e.target.value.toLowerCase()
+    //console.log(searchString)
+    const drugFilter = drugsArray.filter((drug) => {
+        return (
+            drug.Name.toLowerCase().includes(searchString)
+        )
+    })
+    displayDrugs(drugFilter)
+})
     
 wgtButton.addEventListener('click', handleDrugSubmit)
 
@@ -62,16 +65,36 @@ wgtButton.addEventListener('click', handleDrugSubmit)
             drugForm.appendChild(pedP)
             pedP.classList.add('pedP')}
 })
- }
-
+}
 
 deleteBtn.addEventListener('click', (e) => {
     e.preventDefault()
     if(e.target === (deleteBtn)) {
-        drugForm.children[3].remove()
+        drugForm.children[4].remove()
         console.log(e.target)
     }
 })
+protoBtn.addEventListener('mouseover', handleMouseOver)
+
+function handleMouseOver(e) {
+
+    const searchString = searchBar.value.toLowerCase()
+    if (e.target === protoBtn) {
+        e.preventDefault()
+        drugsArray.filter((drug) => {
+            if (drug.Name.toLowerCase().includes(searchString)) {
+                const protoP = document.createElement("p")
+                protoP.innerHTML = `<img src=${drug.protos}></img>`
+                drugForm.appendChild(protoP)
+                protoP.classList.add('protoP')
+                protoP.addEventListener("click", removePic)
+            }
+        })
+    }
+}
+function removePic(e){
+    e.target.remove()
+}
 
 fetchDrugs()
     
