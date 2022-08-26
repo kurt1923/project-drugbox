@@ -133,4 +133,14 @@
     .proto{
         margin-left: 5%;
     }
-    
+    .pedP:hover {
+        font-size: 325%;
+        padding-left: 5%;
+        color: #fff;
+        text-shadow:
+            0 0 7px #fff,
+            0 0 10px rgb(9, 5, 1),
+            0 0 21px rgb(221, 128, 6),
+            0 0 42px rgb(2, 9, 107),
+            0 0 82px rgb(7, 7, 8);
+    }
