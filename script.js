@@ -77,7 +77,6 @@ deleteBtn.addEventListener('click', (e) => {
 protoBtn.addEventListener('mouseover', handleMouseOver)
 
 function handleMouseOver(e) {
-
     const searchString = searchBar.value.toLowerCase()
     if (e.target === protoBtn) {
         e.preventDefault()

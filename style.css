@@ -28,10 +28,9 @@
     div.drug {
         background-color: clear;
         font-family: 'Source Sans Pro';
-        font-size: 290%;
+        font-size: 310%;
         font-weight: 100;
-        padding-top: 4%;
-
+        padding-top: 5%;
         color: #fff;
         text-shadow:
             0 0 7px #fff,
@@ -39,21 +38,6 @@
             0 0 21px rgb(1, 7, 90),
             0 0 42px rgb(2, 9, 107),
             0 0 82px rgb(18, 121, 218);
-    }
-    div.drug:hover {
-        background-color: clear;
-        font-family: 'Source Sans Pro';
-        font-size: 370%;
-        font-weight: 100;
-        padding-top: 4%;
-
-        color: #fff;
-        text-shadow:
-            0 0 7px #fff,
-            0 0 10px rgb(9, 5, 1),
-            0 0 21px rgb(221, 128, 6),
-            0 0 42px rgb(2, 9, 107),
-            0 0 82px rgb(7, 7, 8);
     }
 
     p {
@@ -120,10 +104,10 @@
     }
 
     .drug>img {
-        max-height: 450px;
+        max-height: 400px;
         grid-area: image;
         float: right;
-        margin-top: 3%;
+        margin-top: 0%;
         margin-right: 10%;
         padding-left: 8%;
     }
