@@ -10,11 +10,7 @@ const protoBtn = document.querySelector(".proto")
 const adultpro = document.querySelector(".a-pro")
 let drugsArray 
 
-// const fetchDrugs = async () => {
-//     const res = await fetch('http://localhost:3000/drugObject')
-//     drugsArray = await res.json()
-//     displayDrugs(drugsArray)
-// }
+
 //Fetch my db.json and save it into drugsArray variable
 const fetchDrugs = () => {
     fetch('http://localhost:3000/drugObject')
@@ -61,7 +57,7 @@ wgtButton.addEventListener('click', handleDrugSubmit)
     drugsArray.filter((drug) => {
         if (drug.Name.toLowerCase().includes(searchString)){
             const pedP = document.createElement("p")
-            pedP.innerHTML = `Pediatric Dose for ${wgtInput.value}lbs is ${((drug.pedMult)*wgtInput.value)/2.2}${drug.pedmg} `
+            pedP.innerHTML = `Pediatric Dose for ${wgtInput.value}lbs is ${(((drug.pedMult)*wgtInput.value)/2.2).toFixed(2)}${drug.pedmg} `
             drugForm.appendChild(pedP)
             pedP.classList.add('pedP')}
 })
@@ -100,6 +96,14 @@ fetchDrugs()
 
 
 
+
+
+
+// const fetchDrugs = async () => {
+//     const res = await fetch('http://localhost:3000/drugObject')
+//     drugsArray = await res.json()
+//     displayDrugs(drugsArray)
+// }
 
     // const card = userCardTemplate.content.cloneNode(true).children[0]
     // const name = card.querySelector("[data-name]")
