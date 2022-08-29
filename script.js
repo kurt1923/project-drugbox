@@ -47,7 +47,7 @@ searchBar.addEventListener('keyup', (e) => {
     })
     displayDrugs(drugFilter)
 })
-    
+// takes current searched drug and weight input. Performs calculation to find ped dose and appends below form.    
 wgtButton.addEventListener('click', handleDrugSubmit)
 
  function handleDrugSubmit(e) {
@@ -62,7 +62,7 @@ wgtButton.addEventListener('click', handleDrugSubmit)
             pedP.classList.add('pedP')}
 })
 }
-
+//deletes weight calculation
 deleteBtn.addEventListener('click', (e) => {
     e.preventDefault()
     if(e.target === (deleteBtn)) {
@@ -70,6 +70,7 @@ deleteBtn.addEventListener('click', (e) => {
         console.log(e.target)
     }
 })
+//mouseover p button provides most used protocols for the drug that was seached
 protoBtn.addEventListener('mouseover', handleMouseOver)
 
 function handleMouseOver(e) {
