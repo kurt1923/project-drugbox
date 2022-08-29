@@ -1,6 +1,6 @@
 {
     "drugObject" : [
-        { "Name": "Adenosine", "Indication": "Indication: Symptomatic (poor perfusion) narrow complex tachycardia w/ pulse", "Adult": "Adult Dose: 6mg Rapid Push", "Ped": "Ped Dose: .1mg/kg up to 6mg", "pic": "imgs/Zofran.jpg", "pedMult": 0.1, "pedmg": "mg"  },
+        { "Name": "Adenosine", "Indication": "Indication: Symptomatic (poor perfusion) narrow complex tachycardia w/ pulse", "Adult": "Adult Dose: 6mg Rapid Push", "Ped": "Ped Dose: .1mg/kg up to 6mg", "pic": "imgs/adenosine.jpg", "pedMult": 0.1, "pedmg": "mg"  },
         { "Name": "Albuterol", "Indication": "Indication: Wheezing due to bronchospasm", "Adult": "Adult Dose: 2.5mg Nebulized", "Ped": "Ped Dose: 2.5mg Nebulized", "pic": "imgs/albuterol.jpg", "protos": "imgs/Vfib.jpg"},
         { "Name": "Amiodorone", "Indication": "Indication: Ventricular Arrhythmias or Wide Complex Tachycardia with or without a pulse", "Adult": "Adult Dose: 150 mg IV or IO. Wide Complex is 150mg drip over 10 minutes  ", "Ped": "Ped Dose: 5 mg/kg IV or IO, up to 3 doses every 5 minutes", "pic": "imgs/amiodorone.jpg" , "pedMult": 5, "pedmg": "mg", "protos": "imgs/Vfib.jpg"},
         { "Name": "Aspirin", "Indication": "Indication: Cardiac type Chest Pain", "Adult": "Adult Dose: 324mg", "Ped": "Ped Dose: no protocol", "pic": "imgs/aspirin.jpg", "protos": "imgs/Vfib.jpg"},
