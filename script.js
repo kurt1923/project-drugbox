@@ -100,6 +100,10 @@ fetchDrugs()
 
 
 
+
+// scrap notes and failures!!!
+
+
 // const fetchDrugs = async () => {
 //     const res = await fetch('http://localhost:3000/drugObject')
 //     drugsArray = await res.json()
