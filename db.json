@@ -18,6 +18,6 @@
         { "Name": "Nitroglycerin", "Indication": "Indication: Symptomatic (poor perfusion) narrow complex tachycardia w/ pulse", "Adult": "Adult Dose: 6mg Rapid Push", "Ped": "Ped Dose: no protocols", "pic": "imgs/nitro.jpg", "protos": "imgs/Vfib.jpg"},
         { "Name": "Ondansetron(Zofran)", "Indication": "Indication: Symptomatic (poor perfusion) narrow complex tachycardia w/ pulse", "Adult": "Adult Dose: 6mg Rapid Push", "Ped": "Ped Dose: .1mg/kg up to 6mg" , "pic": "imgs/Zofran.jpg", "pedMult": 0.1, "pedmg": "mg", "protos": "imgs/Vfib.jpg"},
         { "Name": "Oral Glucose", "Indication": "Indication: Symptomatic (poor perfusion) narrow complex tachycardia w/ pulse", "Adult": "Adult Dose: 6mg Rapid Push", "Ped": "Ped Dose: .1mg/kg up to 6mg", "pic": "imgs/Zofran.jpg", "pedMult": 0.1, "pedmg": "mg", "protos": "imgs/Vfib.jpg"},
-        { "Name": "Sodium Bicarbonate", "Indication": "Indication: Overdose, Hyperkalemic Arrest, Neonatal Resuscitation (OLMC), Burns, Crush Injuries", "Adult": "Adult Dose: 1 mEq/kg IV", "Ped": "Ped Dose: 1 mEq/kg IV", "pic": "imgs/Zofran.jpg", "pedMult": 0.1, "pedmg": "mg", "protos": "imgs/Vfib.jpg"}
+        { "Name": "Sodium Bicarbonate", "Indication": "Indication: Overdose, Hyperkalemic Arrest, Neonatal Resuscitation (OLMC), Burns, Crush Injuries", "Adult": "Adult Dose: 1 mEq/kg IV", "Ped": "Ped Dose: 1 mEq/kg IV", "pic": "imgs/bicarb.jpg", "pedMult": 0.1, "pedmg": "mg", "protos": "imgs/Vfib.jpg"}
     ]
     }
