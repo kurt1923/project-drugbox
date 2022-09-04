@@ -17,7 +17,7 @@
         { "Name": "Naloxone(Narcan)", "Indication": "Indication: Narcotic Overdose", "Adult": "IV or IO 0.1 mg/kg - Max Dose 2 mg", "Ped": "Ped Dose: IV or IO 0.1 mg/kg - Max Dose 2 mg", "pic": "imgs/naloxone.jpg" , "pedMult": 0.1, "pedmg": "mg, max is 2mg", "protos": "imgs/Vfib.jpg"},
         { "Name": "Nitroglycerin", "Indication": "Chest Pain, CHF/Pulmonary Edema", "Adult": ".4mg SL eq 5 minutes (max 3 doses)", "Ped": "Ped Dose: no protocols", "pic": "imgs/nitro.jpg", "protos": "imgs/Vfib.jpg"},
         { "Name": "Ondansetron(Zofran)", "Indication": "Nausea and or vomiting", "Adult": "Adult Dose: 4mg IV", "Ped": "Ped Dose: 4mg IV" , "pic": "imgs/Zofran.jpg", "pedMult": 0, "pedmg": "dose is 4mg IV", "protos": "imgs/Vfib.jpg"},
-        { "Name": "Oral Glucose", "Indication": "Indication: Patients with blood glucose level < 50 with altered mentation and who can control their airway and are able to swallow.", "Adult": "15g", "Ped": "Ped Dose: 7.5g", "pic": "imgs/oral glucose.jpg", "pedMult": 0, "pedmg": "dose is 7.5g", "protos": "imgs/Vfib.jpg"},
+        { "Name": "Oral Glucose", "Indication": "Indication: Patients with blood glucose level < 50 with altered mentation and who can control their airway and are able to swallow.", "Adult": "15g", "Ped": "Ped Dose: 7.5g", "pic": "imgs/oralglucose.jpg", "pedMult": 0, "pedmg": "dose is 7.5g", "protos": "imgs/Vfib.jpg"},
         { "Name": "Sodium Bicarbonate", "Indication": "Indication: Overdose, Hyperkalemic Arrest, Neonatal Resuscitation (OLMC), Burns, Crush Injuries", "Adult": "Adult Dose: 1 mEq/kg IV", "Ped": "Ped Dose: 1 mEq/kg IV", "pic": "imgs/bicarb.jpg", "pedMult": 0.1, "pedmg": "mg", "protos": "imgs/Vfib.jpg"}
     ]
     }
